@@ -25,6 +25,14 @@ Washington_URLs = ["https://millercenter.org/the-presidency/presidential-speeche
 Washington_speech_dates = [[1789, 4, 30], [1789, 10, 3], [1790, 1, 8], [1790, 12, 8], [1790, 12, 29], [1791, 10, 25], [1792, 4, 5], [1792, 11, 6], [1792, 12, 12], [1793, 3, 4], [1793, 4, 22], [1793, 12, 3], [1794, 8, 7], [1794, 9, 25], [1794, 11, 19], 
 [1795, 10, 10], [1795, 12, 8], [1796, 3, 30], [1796, 8, 29], [1796, 9, 19], [1796, 12, 7]]
 
+#Create list of web addresses to scrape the text of John Adam's speeches from the Miller Center
+Adams_URLs = ['https://millercenter.org/the-presidency/presidential-speeches/march-4-1797-inaugural-address', 'https://millercenter.org/the-presidency/presidential-speeches/may-16-1797-special-session-message-congress-xyz-affair',
+              'https://millercenter.org/the-presidency/presidential-speeches/november-22-1797-first-annual-message', 'https://millercenter.org/the-presidency/presidential-speeches/march-23-1798-proclamation-day-fasting-humiliation-and-prayer',
+              'https://millercenter.org/the-presidency/presidential-speeches/december-8-1798-second-annual-message', 'https://millercenter.org/the-presidency/presidential-speeches/december-3-1799-third-annual-message',
+              'https://millercenter.org/the-presidency/presidential-speeches/may-21-1800-proclamation-pardons-those-engaged-fries-rebellion', 'https://millercenter.org/the-presidency/presidential-speeches/november-22-1800-fourth-annual-message'] 
+              
+Adams_speech_dates = [[1797, 3, 4], [1797, 5, 16], [1797, 11, 22], [1798, 03, 23], [1798, 12, 8], [1799, 12, 3], [1800, 5, 21], [1800, 11, 22]]    
+
 #Function used to scape speech text from each URL, extract relevant text, output text as a list where each
 #element corresponds to a speech.  There are 21 speeches total
 def compile_speeches(president_URLs):
